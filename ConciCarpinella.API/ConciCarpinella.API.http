@@ -1,0 +1,6 @@
+@ConciCarpinella.API_HostAddress = http://localhost:5009
+
+GET {{ConciCarpinella.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

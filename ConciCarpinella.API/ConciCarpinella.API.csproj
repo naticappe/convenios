@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>ConciCarpinella.API</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Swagger: documenta y permite probar la API desde el navegador -->
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.10" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+
+    <!-- Entity Framework Core: permite trabajar con la base de datos usando código C# -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10" />
+
+    <!-- Conector de PostgreSQL para Entity Framework -->
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.10" />
+
+    <!-- Autenticación con tokens JWT (sistema de login seguro) -->
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
+
+    <!-- Librería para encriptar contraseñas de forma segura -->
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+
+    <!-- Lectura de archivos Excel (.xlsx) para el importador de valores -->
+    <PackageReference Include="ClosedXML" Version="0.102.1" />
+  </ItemGroup>
+
+</Project>
